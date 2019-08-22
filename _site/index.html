@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="CICERON" />
+
+
+<title>BARCELONA GROUP</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE Events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">BARCELONA GROUP</h1>
+<h4 class="author"><em>CICERON</em></h4>
+<h4 class="date"><em>24th October, 2019</em></h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" align="right"></A>') 
+    }); 
+</script>
+<div id="accommodation" class="section level2">
+<h2>🏨 Accommodation</h2>
+<div id="confirmed-hotel-barcelona-princess" class="section level3">
+<h3><strong>Confirmed: Hotel Barcelona Princess</strong></h3>
+<p><strong>Barcelona Princess Hotel</strong> is a 10-minute walk from the beach in the city’s Forum area. It offers wonderful views, a free sauna and a gym. Free WiFi is available throughout.</p>
+<p>All guests have free access to the 2 heated outdoor pools. The one on the 23rd floor offers spectacular sea views.</p>
+<p>Rooms at Princess Barcelona are elegant and bright. Each has contemporary décor. All rooms have satellite TV and offer free drinks from the minibar.</p>
+<p>The bathrooms have a glass wall to separate the bed area from the sink but it is a black blind and the toilet and the shower are separated, each one with its own door.</p>
+<p><strong>Princess Hotel Barcelona</strong> is set on Avenida Diagonal, next to Diagonal Mar Shopping Centre. The tour bus stops in front of the hotel and Maresme Forum Metro Station is 100 m away.</p>
+<p><img src = "https://q-ak.bstatic.com/images/hotel/max1024x768/171/171780200.jpg" width="360"> <img src ="https://r-ak.bstatic.com/images/hotel/max1024x768/188/188941902.jpg" width="360" align="right"></p>
+<p><img src = "TWIN.JPG"></p>
+<style>
+p.comment {
+background-color: #ffcc99;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+}
+</style>
+<p class="comment">
+<strong>Confirmed 150 TWIN rooms, breakfast inc - 231€ VAT inc per room</strong>.
+</p>
+</div>
+<div id="meeting-rooms" class="section level3">
+<h3>Meeting rooms</h3>
+<p>Meeting rooms floor plan:</p>
+<p><img src = "princess1.png" width="800"></p>
+<p>All the orange area is more than 400sqm . These meeting rooms are separated by panels so, for this activity they will be open making one space. Some of them have big windows so, as they will be open all the area will have natural lighting.</p>
+<p><img src = "https://www.hotelbarcelonaprincess.com/wp-content/blogs.dir/1765/files/events/Sal%C3%B3n-Mediterr%C3%A1neo_1.jpg" width="100%"></p>
+<p><img src = "https://www.hotelbarcelonaprincess.com/wp-content/blogs.dir/1765/files/events/Sal%C3%B3n-Princess-1_1.jpg" width="100%" ></p>
+<style>
+p.comment {
+background-color: #ffcc99;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+}
+</style>
+<p class="comment">
+The cost of the rental of the space (Forum + Mediterraneo + Princess 1 and 2+ Foyer + Diagonal) will be 2100€ VAT inc.
+</p>
+<style>
+p.comment {
+background-color: #ffcc99;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+}
+</style>
+<p class="comment">
+Optional: AV needed to project during 20/30 minutes an introduction of the activity for the whole group at the same time, including different screens, soundsystem, technician: 1650€ VAT inc .
+</p>
+<hr />
+</div>
+</div>
+<div id="el-principal-de-leixample" class="section level2">
+<h2>🍽 El Principal de l’Eixample</h2>
+<p>Located 50 meters from the famous La Pedrera and Paseo de Gracia, El Principal is a versatile space.</p>
+<p>It is a stately main floor flooded with natural light thanks to its large windows. It has a magnificent interior courtyard is dividing the space in 2 but with good weather the whole venue has a capacity for 500 pax in cocktail style.</p>
+<p>El Principal bases its cuisine in the traditional Catalan cuisine and seasonal products, and offer proposals developed especially for groups and special occasions. Also it has an extensive wine list.</p>
+<p>On the basement it has a small private disco-club up to 150 pax, that can be used after dinner to extend the party.</p>
+<p><img src = "https://unbuendiaenbarcelona.com/wp-content/uploads/2018/06/principal-7.jpg" width="100%"></p>
+<p><img src = "http://professional.barcelonaturisme.com/files/9193-307-imagen04/boda11.jpg" width="100%"></p>
+<p><img src = "http://static1.squarespace.com/static/56a60592c21b866082d56892/56a9eb5b57eb8df616f03ffb/56b85c6760b5e9ca41ceb945/1495705697541/?format=1500w" width="100%"></p>
+<pre><code>MENU
+ 
+Breadsticks with roasted corn, olive muffins, onion puff pastry, crunchy parmesan
+Mimolette (cheese) croquettes or  Roast beef, asparagus and ementhal roll or Garden tomatoes salad with anchovies and basil (to be chosen in advance)
+Foie Choux 
+Fried Artichokes - with romescu sauce
+Crispy sesame bread with smoked salmon
+Tomato soup Shot 
+Veal Carpaccio toast wit foie mousse and truffle vinaigrette,
+Sun-dried tomato, goat cheese and basil brick 
+Hummus with white tuna, sesame and soybeans 
+Bikinis
+Shrimp and green asparagus brochette (served separately) - keep asparagus vegan
+Truffle rigatoni and parmesan cheese 
+Mini-burgers with onion and mustard 
+
+Dark and white chocolate tart
+Mini cheesecake
+Lemon and merengue pie (with a lot of lemon curd)
+Strawberry and mint sorbet
+
+Coffee and tea 
+
+Ermita d&#39;Espinells, D.O Penedés
+Sileo D.O. Montsant
+Cava Juvé i Camps
+Water, beer and soft-drinks
+
+Rates per person: 67€ VAT inc</code></pre>
+</div>
+<div id="transfer-rates" class="section level2">
+<h2>🚌 Transfer rates</h2>
+<ul>
+<li>50 seater bus from Airport to La Mola: 330€ VAT inc per bus- we suggest contracting a minimum of 7 buses.</li>
+<li>21st October - 30 seater bus at disposal from 7.45h to 16.00h: 687€ VAT inc.</li>
+<li><p>24th October - 50 seater bus at disposal for dinner (4h - from Barcelona Princess to El principal and back): 440€ VAT inc per bus -</p></li>
+<li><p>Optional: a small bottle of water: 1,5€ VAT inc</p></li>
+</ul>
+</div>
+<div id="photovideo" class="section level2 tabset tabset-fade tabset-pills">
+<h2>📸 Photo&amp;Video</h2>
+<div id="carta-grisa" class="section level3">
+<h3>Carta Grisa</h3>
+<p><a href="https://cartagrisa.com" class="uri">https://cartagrisa.com</a></p>
+<p>1 photographer + 2 camera man (1 fix camera for the meetings + 1 mobile )</p>
+<pre><code>  Day 1 - 22nd Oct - from 9 to 21h (12h)
+  Photographer: 12h + 8 h photo edition: 560€ VAT inc
+  Camera man 1 (9h to 21h): 12h + 12h video edition: 650€ VAT inc
+  Camera man 2 (9h to 17h): 8h: 260€ VAT inc
+
+  Day 2 - 23th Oct - from 9 to 21h (12h)
+  Photographer: 12h + 10 h photo edition: 620€ VAT inc
+  Camera man 1 (9h to 21h): 12h + 12h video edition: 650€ VAT inc
+  Camera man 2 (9h to 12.30h): 4h: 160€ VAT inc
+
+  Day 3 - 24th Oct - 4h (CSR activity)
+  Photographer: 4h + 3 h photo edition: 250€ VAT inc
+  Camera man 1: 4h + 6h video edition: 340€ VAT inc
+
+  Material, transfer, preparation time, etc: 750€
+  ____________________________________________________________________________________
+
+  TOTAL: 3.490€ VAT inc</code></pre>
+<ul>
+<li>If you want to add the dinner in Barcelona - photos + video you will need to add 600€</li>
+</ul>
+<p>The pictures will be delivered 1 week after the event and the video 1 month later - if you need them earlier it will be a supplement</p>
+<ul>
+<li>It is including 2 videos
+<ul>
+<li>1 for the meetings with fixed camera + mobile</li>
+<li>1 of 3 minutes as resumé including all the activities of the event</li>
+</ul></li>
+</ul>
+</div>
+<div id="gabriele-merolli" class="section level3">
+<h3>Gabriele Merolli</h3>
+<p><a href="https://www.gabrielemerolli.com/en/" class="uri">https://www.gabrielemerolli.com/en/</a></p>
+<p>1 photographer + 1 camera man</p>
+<pre><code>22nd Oct (9 to 17h - meeting)
+Photographer (inc photo edition): 968€ VAT inc
+Camera man.: 530€ VAT inc
+
+22nd Oct (dinner 19.00h to 21.30h) 
+Photographer (inc photo edition): 380€ VAT inc
+Camera man.: 300€ VAT inc
+
+23th Oct (9 to 12.30h - meeting )
+Photographer (inc photo edition): 425€ VAT inc
+Camera man.: 300€ VAT inc
+
+23th Oct (14.00h - 17.00h Team building)
+Photographer (inc photo edition): 425€ VAT inc
+Camera man.: 300€ VAT inc
+
+23th Oct (dinner 18.30h to 21.00h) 
+Photographer (inc photo edition): 380€ VAT inc
+Camera man.: 300€ VAT inc
+
+24th Oct (CSR activity - 4h)
+Photographer (inc photo edition): 484€ VAT inc
+Camera man.: 380€ VAT inc
+
+Video edition - meetings: 530€ VAT inc
+Video edition - resumé : 600€ VAT inc
+
+Transfers: 230€ VAT inc
+_________________________________________________________________________________
+
+TOTAL: 6.532€ VAT inc</code></pre>
+<p>*If you want to add the dinner in Barcelona - photos + video you will need to add 750€</p>
+<p>All the material (photos and videos will be delivered 1 week after the event)</p>
+<ul>
+<li>It is including 2 videos
+<ul>
+<li>1 for the meetings with fixed camera.</li>
+<li>1 of 3/5 minutes as resumé including all the activities of the event</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="terms-conditions" class="section level2">
+<h2>Terms &amp; Conditions</h2>
+<p>*Rates valid for the requested dates.</p>
+<p>*Net rates for CICERON</p>
+<p>*Valid for 300 pax</p>
+<p>*Cutting Edge Events management fee including in the detailed rates</p>
+<p>*VAT included.</p>
+<pre><code>*Hotel Barcelona Princess Payment/cancellation policy:
+
+Deposits:
+40% before the 4th of June 2019
+30% before the 14th of June 2019
+30% before the 23th of September 2019
+
+
+Cancellations
+
+A 30% can be cancelled without cost from the confirmation until 14th June 2019
+A 10% can be cancelled without  cost from 15th June 2019 to 16th August 2019 
+A 5% can be cancelled without cost from 17th August to 22nd September
+From 23rd September the hotel will charge the 100% </code></pre>
+<hr />
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
